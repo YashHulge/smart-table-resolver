@@ -1,9 +1,3 @@
-Here is the fully updated `README.md` with the new, dedicated **Live Demo** section placed right at the bottom, just below the Future Roadmap.
-
-Copy and paste this to update your repository:
-
----
-
 ```markdown
 # Smart Timetable Conflict Resolver 📅
 
