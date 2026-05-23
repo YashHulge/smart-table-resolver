@@ -85,7 +85,3 @@ While the current iteration fulfills the core algorithmic and visualization requ
 Experience the autonomous conflict resolver in action. The MVP is fully deployed and accessible online:
 
 👉 **[Launch Smart Timetable Resolver](https://smart-table-resolver.vercel.app/)**
-
-```
-
-```
