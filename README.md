@@ -1,6 +1,3 @@
-Here is a professional, top-tier `README.md` structured specifically to impress hackathon judges and recruiters. You can copy and paste this directly into the `README.md` file in your repository.
-
----
 
 # Smart Timetable Conflict Resolver 📅
 
