@@ -1,0 +1,73 @@
+.conflict-alert {
+  background-color: #fee2e2;
+  border: 1px solid #ef4444;
+  color: #b91c1c;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.conflict-alert h4 {
+  margin-bottom: 0.5rem;
+}
+
+.conflict-alert ul {
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.timetable-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.slot-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+  transition: transform 0.2s;
+}
+
+.slot-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.slot-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.day-badge {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.time-badge {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.slot-body h4 {
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.slot-body p {
+  color: #475569;
+  font-size: 0.85rem;
+  margin-bottom: 0.2rem;
+}
