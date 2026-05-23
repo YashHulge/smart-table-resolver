@@ -1,16 +1,84 @@
-# React + Vite
+Here is a professional, top-tier `README.md` structured specifically to impress hackathon judges and recruiters. You can copy and paste this directly into the `README.md` file in your repository.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# Smart Timetable Conflict Resolver 📅
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+An autonomous, interactive dashboard designed to instantly detect scheduling conflicts and algorithmically generate optimal, conflict-free timetables.
 
-## React Compiler
+Built as a high-performance MVP, this application strips away heavy backend dependencies to deliver real-time validation and autonomous conflict resolution entirely within the browser.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Key Features
 
-## Expanding the ESLint configuration
+* **Autonomous Resolution Algorithm:** Features a greedy "Auto-Resolve" engine that parses the entire schedule matrix, calculates alternative slots, and instantly resolves all active conflicts with a single click.
+* **Real-Time Conflict Detection:** Automatically flags overlaps and highlights the exact point of failure, including:
+* 👤 **Faculty Clashes:** Double-booked professors.
+* 🚪 **Room Clashes:** Double-booked physical spaces.
+* ⚠️ **Type Mismatches:** E.g., Scheduling a Lab session in a Lecture hall.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+* **Interactive Visual Dashboard:** A clean, 3-column enterprise-grade UI featuring intuitive color-coded state management and real-time statistics.
+* **Frictionless Export:** Generates instant `.csv` spreadsheet downloads and features custom CSS injection for flawless, formatted PDF printing.
+* **Zero-Dependency Persistence:** Utilizes browser `localStorage` to ensure schedule data survives accidental page refreshes without needing a database.
+
+## 🛠️ Tech Stack
+
+This project was intentionally engineered to be lean and fast, strictly utilizing foundational frontend technologies without relying on heavy external UI libraries or backend frameworks.
+
+* **Core:** React.js (via Vite)
+* **Logic:** Pure JavaScript (ES6+) Algorithms
+* **Styling:** Vanilla CSS (Flexbox/Grid architecture)
+* **Deployment Architecture:** Client-side only (No database/backend)
+
+## 📂 Project Architecture
+
+The codebase is modularized for strict separation of concerns, keeping UI rendering distinct from algorithmic calculations.
+
+```text
+src/
+├── Components/          
+│   ├── forms/           # Data entry and schedule creation UI
+│   └── timetable/       # Core visualization, grid rendering, and conflict cards
+├── data/                
+│   └── mockData.js      # Structured JSON serving as the mock database
+├── utils/               
+│   └── conflictDetector.js # Pure JS math/logic for overlap detection and resolution
+└── App.jsx              # Main state container and layout orchestration
+
+```
+
+## 💻 Getting Started
+
+To run this project locally on your machine:
+
+**1. Clone the repository**
+
+```bash
+git clone https://github.com/YashHulge/smart-table-resolver.git
+cd smart-table-resolver
+
+```
+
+**2. Install dependencies**
+
+```bash
+npm install
+
+```
+
+**3. Start the development server**
+
+```bash
+npm run dev
+
+```
+
+Open the `localhost` link provided in your terminal to view the application.
+
+## 🔮 Future Roadmap (Post-MVP)
+
+While the current iteration fulfills the core algorithmic and visualization requirements, future scaling could include:
+
+* Integration of a Node/Express backend for multi-user, cross-department collaborative scheduling.
+* Implementation of secure JWT-based faculty authentication.
+* Drag-and-drop capabilities directly within the Timetable Grid.
